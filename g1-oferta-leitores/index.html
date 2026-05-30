@@ -1,5 +1,25 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
 	<meta charset="UTF-8">
+	<script>
+	(function(){
+		var repo = 'oferta-g1';
+		var sub = 'g1-oferta-leitores/';
+		var baseUrl = './';
+		try {
+			if (location.hostname.indexOf('github.io') !== -1) {
+				baseUrl = '/' + repo + '/' + sub;
+			} else if (location.pathname.indexOf('/' + sub) !== -1) {
+				baseUrl = './';
+			} else {
+				baseUrl = './' + sub;
+			}
+		} catch(e){}
+		var head = document.getElementsByTagName('head')[0];
+		var baseEl = document.createElement('base');
+		baseEl.setAttribute('href', baseUrl);
+		head.insertBefore(baseEl, head.firstChild);
+	})();
+	</script>
 		<title>DESCOBERTA DO MOMENTO – Biovein Original ® – Site Oficial Biosemente</title>
 <meta name="robots" content="max-image-preview:large">
 
