@@ -88,18 +88,52 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="canonical" href="https://biovein.com.br/descoberta-do-momento/">
 <meta name="generator" content="Elementor 3.35.5; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
+				/* Remover margens e espaçamentos extras no topo */
 				body {
 					margin: 0 !important;
 					padding: 0 !important;
 				}
+				
 				.elementor-680 {
 					margin-top: 0 !important;
 					padding-top: 0 !important;
 				}
+				
+				/* Fixar espaçamento entre header e conteúdo */
 				.elementor-element-0417343 {
 					margin-top: 0 !important;
-					padding-top: 0 !important;
+					margin-bottom: 0 !important;
+					padding-bottom: 0 !important;
 				}
+				
+				.elementor-element-7fe340c {
+					margin-top: 0 !important;
+					padding-top: 10px !important;
+				}
+				
+				/* Garantir espaçamento consistente em todas as resoluções */
+				@media (max-width: 1024px) {
+					.elementor-element-0417343 {
+						margin-bottom: 0 !important;
+						padding-bottom: 0 !important;
+					}
+					.elementor-element-7fe340c {
+						margin-top: 0 !important;
+						padding-top: 10px !important;
+					}
+				}
+				
+				@media (max-width: 767px) {
+					.elementor-element-0417343 {
+						margin-bottom: 0 !important;
+						padding-bottom: 0 !important;
+					}
+					.elementor-element-7fe340c {
+						margin-top: 0 !important;
+						padding-top: 10px !important;
+					}
+				}
+				
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
 					background-image: none !important;
